@@ -5,6 +5,7 @@ from .views import (
     EquipeViewSet,
     EquipementViewSet,
     SpaceViewSet,
+    UtilisateurViewSet,
     csrf_token_view,
     login_view,
     logout_view,
@@ -16,6 +17,7 @@ router.register(r'services', ServiceViewSet)
 router.register(r'equipe', EquipeViewSet)
 router.register(r'equipements', EquipementViewSet)
 router.register(r'spaces', SpaceViewSet)
+router.register(r'utilisateurs', UtilisateurViewSet)
 
 urlpatterns = [
     path('api/auth/csrf/', csrf_token_view, name='csrf-token'),

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Service, Equipe, Equipement, Space
+from .models import Service, Equipe, Equipement, Space, Utilisateur
 
 
 @admin.register(Service)
@@ -24,4 +24,11 @@ class EquipementAdmin(admin.ModelAdmin):
 class SpaceAdmin(admin.ModelAdmin):
     list_display = ['name', 'order']
     list_editable = ['order']
+
+
+@admin.register(Utilisateur)
+class UtilisateurAdmin(admin.ModelAdmin):
+    list_display = ['username', 'email', 'role', 'is_active']
+    list_filter = ['role', 'is_active']
+    search_fields = ['username', 'email', 'role']
 

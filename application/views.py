@@ -5,8 +5,8 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 
-from .models import Service, Equipe, Equipement, Space
-from .serializers import ServiceSerializer, EquipeSerializer, EquipementSerializer, SpaceSerializer
+from .models import Service, Equipe, Equipement, Space, Utilisateur
+from .serializers import ServiceSerializer, EquipeSerializer, EquipementSerializer, SpaceSerializer, UtilisateurSerializer
 
 
 @api_view(['GET'])
@@ -79,3 +79,8 @@ class EquipementViewSet(viewsets.ModelViewSet):
 class SpaceViewSet(viewsets.ModelViewSet):
     queryset = Space.objects.all()
     serializer_class = SpaceSerializer
+
+
+class UtilisateurViewSet(viewsets.ModelViewSet):
+    queryset = Utilisateur.objects.all()
+    serializer_class = UtilisateurSerializer

@@ -1,0 +1,288 @@
+[
+  {
+    "model": "application.service",
+    "pk": 1,
+    "fields": {
+      "name": "Médecine interne",
+      "text": "Prise en charge des maladies internes, diagnostic et traitement des pathologies chroniques.",
+      "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=80",
+      "order": 1
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 2,
+    "fields": {
+      "name": "Gynécologie - Obstétrique",
+      "text": "Suivi des grossesses, accouchement, consultations gynécologiques et soins post-natals.",
+      "image": "https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=900&q=80",
+      "order": 2
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 3,
+    "fields": {
+      "name": "Chirurgie",
+      "text": "Interventions chirurgicales mineures et moyennes dans un environnement stérile et sécurisé.",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80",
+      "order": 3
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 4,
+    "fields": {
+      "name": "Pédiatrie",
+      "text": "Soins adaptés aux enfants, consultations, surveillance et accompagnement des parents.",
+      "image": "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=900&q=80",
+      "order": 4
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 5,
+    "fields": {
+      "name": "Cardiologie",
+      "text": "Diagnostic et suivi des maladies cardiovasculaires avec équipements spécialisés.",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80",
+      "order": 5
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 6,
+    "fields": {
+      "name": "Gastroentérologie",
+      "text": "Prise en charge des maladies digestives et hépatiques avec diagnostics spécialisés.",
+      "image": "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=900&q=80",
+      "order": 6
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 7,
+    "fields": {
+      "name": "Néphrologie",
+      "text": "Traitement des maladies rénales et suivi des patients atteints d'insuffisance rénale.",
+      "image": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=900&q=80",
+      "order": 7
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 8,
+    "fields": {
+      "name": "Prise en charge drépanocytose",
+      "text": "Suivi spécialisé et traitement adéquate des patients drépanocytaires.",
+      "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=80",
+      "order": 8
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 9,
+    "fields": {
+      "name": "Consultation prénatale (CPN)",
+      "text": "Suivi médical des femmes enceintes pour assurer une grossesse saine.",
+      "image": "https://images.unsplash.com/photo-1576765607924-4187b2b9b5ce?auto=format&fit=crop&w=900&q=80",
+      "order": 9
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 10,
+    "fields": {
+      "name": "Consultation préscolaire (CPS)",
+      "text": "Surveillance médicale et conseils pour les enfants en âge préscolaire.",
+      "image": "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=900&q=80",
+      "order": 10
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 11,
+    "fields": {
+      "name": "Imagerie Médicale",
+      "text": "Radiographie et échographie pour le diagnostic précis des pathologies.",
+      "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80",
+      "order": 11
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 12,
+    "fields": {
+      "name": "Laboratoire Spécialisé",
+      "text": "Analyses biologiques avancées pour un diagnostic rapide et fiable.",
+      "image": "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=900&q=80",
+      "order": 12
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 13,
+    "fields": {
+      "name": "Pharmacie",
+      "text": "Stock de médicaments essentiels pour assurer la continuité des traitements.",
+      "image": "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=900&q=80",
+      "order": 13
+    }
+  },
+  {
+    "model": "application.equipe",
+    "pk": 1,
+    "fields": {
+      "name": "Dr Aminata Diallo",
+      "role": "Médecin généraliste",
+      "text": "Consultations, suivi des patients et coordination des soins courants.",
+      "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80",
+      "order": 1
+    }
+  },
+  {
+    "model": "application.equipe",
+    "pk": 2,
+    "fields": {
+      "name": "Dr Jean Mbala",
+      "role": "Responsable urgences",
+      "text": "Prise en charge des urgences et organisation de la réponse médicale immédiate.",
+      "image": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=80",
+      "order": 2
+    }
+  },
+  {
+    "model": "application.equipe",
+    "pk": 3,
+    "fields": {
+      "name": "Sarah Kouamé",
+      "role": "Infirmière principale",
+      "text": "Coordination des soins infirmiers, surveillance et accompagnement des patients.",
+      "image": "https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=800&q=80",
+      "order": 3
+    }
+  },
+  {
+    "model": "application.equipe",
+    "pk": 4,
+    "fields": {
+      "name": "Nadine Kabila",
+      "role": "Sage-femme",
+      "text": "Suivi prénatal, accompagnement des mamans et conseils autour de la maternité.",
+      "image": "https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&w=800&q=80",
+      "order": 4
+    }
+  },
+  {
+    "model": "application.equipe",
+    "pk": 5,
+    "fields": {
+      "name": "Patrick Ilunga",
+      "role": "Technicien de laboratoire",
+      "text": "Réalisation des analyses médicales et transmission fiable des résultats.",
+      "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80",
+      "order": 5
+    }
+  },
+  {
+    "model": "application.equipe",
+    "pk": 6,
+    "fields": {
+      "name": "Mireille N'Goma",
+      "role": "Accueil des patients",
+      "text": "Orientation des patients, gestion des admissions et renseignements aux familles.",
+      "image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=800&q=80",
+      "order": 6
+    }
+  },
+  {
+    "model": "application.equipement",
+    "pk": 1,
+    "fields": {
+      "name": "Bloc opératoire",
+      "text": "Salle stérile équipée pour les interventions chirurgicales mineures et moyennes, avec monitoring et équipements d'anesthésie.",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=80",
+      "order": 1
+    }
+  },
+  {
+    "model": "application.equipement",
+    "pk": 2,
+    "fields": {
+      "name": "Salle d'accouchement",
+      "text": "Espace sécurisé et confortable pour les naissances, équipé de matériel de surveillance fœtale et de soins néonatals.",
+      "image": "https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=1000&q=80",
+      "order": 2
+    }
+  },
+  {
+    "model": "application.equipement",
+    "pk": 3,
+    "fields": {
+      "name": "Laboratoire d'analyses",
+      "text": "Équipements modernes pour les analyses sanguines, bactériologiques et biochimiques avec résultats rapides.",
+      "image": "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1000&q=80",
+      "order": 3
+    }
+  },
+  {
+    "model": "application.equipement",
+    "pk": 4,
+    "fields": {
+      "name": "Service d'imagerie",
+      "text": "Échographie et radiographie pour le diagnostic précis des pathologies, avec interprétation par des spécialistes.",
+      "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1000&q=80",
+      "order": 4
+    }
+  },
+  {
+    "model": "application.equipement",
+    "pk": 5,
+    "fields": {
+      "name": "Chambres d'hospitalisation",
+      "text": "Chambres individuelles et doubles avec lits médicalisés, appel infirmier et surveillance continue.",
+      "image": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1000&q=80",
+      "order": 5
+    }
+  },
+  {
+    "model": "application.equipement",
+    "pk": 6,
+    "fields": {
+      "name": "Pharmacie interne",
+      "text": "Stock de médicaments essentiels et dispositifs médicaux pour assurer la continuité des traitements prescrits.",
+      "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1000&q=80",
+      "order": 6
+    }
+  },
+  {
+    "model": "application.space",
+    "pk": 1,
+    "fields": {
+      "name": "Chambres d'hospitalisation",
+      "text": "Espaces calmes, literie confortable, suivi régulier et hygiène renforcée.",
+      "image": "https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=900&q=80",
+      "order": 1
+    }
+  },
+  {
+    "model": "application.space",
+    "pk": 2,
+    "fields": {
+      "name": "Toilettes et sanitaires",
+      "text": "Sanitaires entretenus, accessibles et pensés pour le confort des patients.",
+      "image": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=900&q=80",
+      "order": 2
+    }
+  },
+  {
+    "model": "application.space",
+    "pk": 3,
+    "fields": {
+      "name": "Réception",
+      "text": "Point d'accueil clair pour les admissions, renseignements et orientations.",
+      "image": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=900&q=80",
+      "order": 3
+    }
+  }
+]

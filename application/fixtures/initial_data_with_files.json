@@ -1,0 +1,288 @@
+[
+  {
+    "model": "application.service",
+    "pk": 1,
+    "fields": {
+      "name": "Médecine interne",
+      "text": "Prise en charge des maladies internes, diagnostic et traitement des pathologies chroniques.",
+      "image": "services/medicine_interne.jpg",
+      "order": 1
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 2,
+    "fields": {
+      "name": "Gynécologie - Obstétrique",
+      "text": "Suivi des grossesses, accouchement, consultations gynécologiques et soins post-natals.",
+      "image": "services/gynecologie.jpg",
+      "order": 2
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 3,
+    "fields": {
+      "name": "Chirurgie",
+      "text": "Interventions chirurgicales mineures et moyennes dans un environnement stérile et sécurisé.",
+      "image": "services/chirurgie.jpg",
+      "order": 3
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 4,
+    "fields": {
+      "name": "Pédiatrie",
+      "text": "Soins adaptés aux enfants, consultations, surveillance et accompagnement des parents.",
+      "image": "services/pediatrie.jpg",
+      "order": 4
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 5,
+    "fields": {
+      "name": "Cardiologie",
+      "text": "Diagnostic et suivi des maladies cardiovasculaires avec équipements spécialisés.",
+      "image": "services/cardiologie.jpg",
+      "order": 5
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 6,
+    "fields": {
+      "name": "Gastroentérologie",
+      "text": "Prise en charge des maladies digestives et hépatiques avec diagnostics spécialisés.",
+      "image": "services/gastroenterologie.jpg",
+      "order": 6
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 7,
+    "fields": {
+      "name": "Néphrologie",
+      "text": "Traitement des maladies rénales et suivi des patients atteints d'insuffisance rénale.",
+      "image": "services/nephrologie.jpg",
+      "order": 7
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 8,
+    "fields": {
+      "name": "Prise en charge drépanocytose",
+      "text": "Suivi spécialisé et traitement adéquate des patients drépanocytaires.",
+      "image": "services/drepanocytose.jpg",
+      "order": 8
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 9,
+    "fields": {
+      "name": "Consultation prénatale (CPN)",
+      "text": "Suivi médical des femmes enceintes pour assurer une grossesse saine.",
+      "image": "services/cpn.jpg",
+      "order": 9
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 10,
+    "fields": {
+      "name": "Consultation préscolaire (CPS)",
+      "text": "Surveillance médicale et conseils pour les enfants en âge préscolaire.",
+      "image": "services/cps.jpg",
+      "order": 10
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 11,
+    "fields": {
+      "name": "Imagerie Médicale",
+      "text": "Radiographie et échographie pour le diagnostic précis des pathologies.",
+      "image": "services/imagerie.jpg",
+      "order": 11
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 12,
+    "fields": {
+      "name": "Laboratoire Spécialisé",
+      "text": "Analyses biologiques avancées pour un diagnostic rapide et fiable.",
+      "image": "services/laboratoire.jpg",
+      "order": 12
+    }
+  },
+  {
+    "model": "application.service",
+    "pk": 13,
+    "fields": {
+      "name": "Pharmacie",
+      "text": "Stock de médicaments essentiels pour assurer la continuité des traitements.",
+      "image": "services/pharmacie.jpg",
+      "order": 13
+    }
+  },
+  {
+    "model": "application.equipe",
+    "pk": 1,
+    "fields": {
+      "name": "Dr Aminata Diallo",
+      "role": "Médecin généraliste",
+      "text": "Consultations, suivi des patients et coordination des soins courants.",
+      "image": "equipe/aminata.jpg",
+      "order": 1
+    }
+  },
+  {
+    "model": "application.equipe",
+    "pk": 2,
+    "fields": {
+      "name": "Dr Jean Mbala",
+      "role": "Responsable urgences",
+      "text": "Prise en charge des urgences et organisation de la réponse médicale immédiate.",
+      "image": "equipe/jean.jpg",
+      "order": 2
+    }
+  },
+  {
+    "model": "application.equipe",
+    "pk": 3,
+    "fields": {
+      "name": "Sarah Kouamé",
+      "role": "Infirmière principale",
+      "text": "Coordination des soins infirmiers, surveillance et accompagnement des patients.",
+      "image": "equipe/sarah.jpg",
+      "order": 3
+    }
+  },
+  {
+    "model": "application.equipe",
+    "pk": 4,
+    "fields": {
+      "name": "Nadine Kabila",
+      "role": "Sage-femme",
+      "text": "Suivi prénatal, accompagnement des mamans et conseils autour de la maternité.",
+      "image": "equipe/nadine.jpg",
+      "order": 4
+    }
+  },
+  {
+    "model": "application.equipe",
+    "pk": 5,
+    "fields": {
+      "name": "Patrick Ilunga",
+      "role": "Technicien de laboratoire",
+      "text": "Réalisation des analyses médicales et transmission fiable des résultats.",
+      "image": "equipe/patrick.jpg",
+      "order": 5
+    }
+  },
+  {
+    "model": "application.equipe",
+    "pk": 6,
+    "fields": {
+      "name": "Mireille N'Goma",
+      "role": "Accueil des patients",
+      "text": "Orientation des patients, gestion des admissions et renseignements aux familles.",
+      "image": "equipe/mireille.jpg",
+      "order": 6
+    }
+  },
+  {
+    "model": "application.equipement",
+    "pk": 1,
+    "fields": {
+      "name": "Bloc opératoire",
+      "text": "Salle stérile équipée pour les interventions chirurgicales mineures et moyennes, avec monitoring et équipements d'anesthésie.",
+      "image": "equipements/bloc_operatoire.jpg",
+      "order": 1
+    }
+  },
+  {
+    "model": "application.equipement",
+    "pk": 2,
+    "fields": {
+      "name": "Salle d'accouchement",
+      "text": "Espace sécurisé et confortable pour les naissances, équipé de matériel de surveillance fœtale et de soins néonatals.",
+      "image": "equipements/salle_accouchement.jpg",
+      "order": 2
+    }
+  },
+  {
+    "model": "application.equipement",
+    "pk": 3,
+    "fields": {
+      "name": "Laboratoire d'analyses",
+      "text": "Équipements modernes pour les analyses sanguines, bactériologiques et biochimiques avec résultats rapides.",
+      "image": "equipements/laboratoire.jpg",
+      "order": 3
+    }
+  },
+  {
+    "model": "application.equipement",
+    "pk": 4,
+    "fields": {
+      "name": "Service d'imagerie",
+      "text": "Échographie et radiographie pour le diagnostic précis des pathologies, avec interprétation par des spécialistes.",
+      "image": "equipements/imagerie.jpg",
+      "order": 4
+    }
+  },
+  {
+    "model": "application.equipement",
+    "pk": 5,
+    "fields": {
+      "name": "Chambres d'hospitalisation",
+      "text": "Chambres individuelles et doubles avec lits médicalisés, appel infirmier et surveillance continue.",
+      "image": "equipements/chambres.jpg",
+      "order": 5
+    }
+  },
+  {
+    "model": "application.equipement",
+    "pk": 6,
+    "fields": {
+      "name": "Pharmacie interne",
+      "text": "Stock de médicaments essentiels et dispositifs médicaux pour assurer la continuité des traitements prescrits.",
+      "image": "equipements/pharmacie.jpg",
+      "order": 6
+    }
+  },
+  {
+    "model": "application.space",
+    "pk": 1,
+    "fields": {
+      "name": "Chambres d'hospitalisation",
+      "text": "Espaces calmes, literie confortable, suivi régulier et hygiène renforcée.",
+      "image": "spaces/chambres.jpg",
+      "order": 1
+    }
+  },
+  {
+    "model": "application.space",
+    "pk": 2,
+    "fields": {
+      "name": "Toilettes et sanitaires",
+      "text": "Sanitaires entretenus, accessibles et pensés pour le confort des patients.",
+      "image": "spaces/toilettes.jpg",
+      "order": 2
+    }
+  },
+  {
+    "model": "application.space",
+    "pk": 3,
+    "fields": {
+      "name": "Réception",
+      "text": "Point d'accueil clair pour les admissions, renseignements et orientations.",
+      "image": "spaces/reception.jpg",
+      "order": 3
+    }
+  }
+]

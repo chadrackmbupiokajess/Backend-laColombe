@@ -4,7 +4,7 @@ from django.db import models
 class Service(models.Model):
     name = models.CharField(max_length=200)
     text = models.TextField()
-    image = models.ImageField(upload_to='services/')
+    image = models.ImageField(upload_to='services/', blank=True, null=True)
     order = models.IntegerField(default=0)
 
     class Meta:
@@ -18,7 +18,7 @@ class Equipe(models.Model):
     name = models.CharField(max_length=200)
     role = models.CharField(max_length=200)
     text = models.TextField(blank=True)
-    image = models.ImageField(upload_to='equipe/')
+    image = models.ImageField(upload_to='equipe/', blank=True, null=True)
     order = models.IntegerField(default=0)
 
     class Meta:
@@ -31,7 +31,7 @@ class Equipe(models.Model):
 class Equipement(models.Model):
     name = models.CharField(max_length=200)
     text = models.TextField()
-    image = models.ImageField(upload_to='equipements/')
+    image = models.ImageField(upload_to='equipements/', blank=True, null=True)
     order = models.IntegerField(default=0)
 
     class Meta:
@@ -44,7 +44,7 @@ class Equipement(models.Model):
 class Space(models.Model):
     name = models.CharField(max_length=200)
     text = models.TextField()
-    image = models.ImageField(upload_to='spaces/')
+    image = models.ImageField(upload_to='spaces/', blank=True, null=True)
     order = models.IntegerField(default=0)
 
     class Meta:

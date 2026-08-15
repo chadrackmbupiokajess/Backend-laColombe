@@ -3,68 +3,48 @@ from rest_framework import serializers
 from .models import Service, Equipe, Equipement, Space, Utilisateur
 
 
-class ServiceSerializer(serializers.ModelSerializer):
-    image = serializers.SerializerMethodField()
+class AbsoluteImageMixin:
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        image = getattr(instance, 'image', None)
+        if image:
+            request = self.context.get('request')
+            data['image'] = request.build_absolute_uri(image.url) if request else image.url
+        else:
+            data['image'] = None
+        return data
+
+
+class ServiceSerializer(AbsoluteImageMixin, serializers.ModelSerializer):
+    image = serializers.ImageField(required=False, allow_null=True)
 
     class Meta:
         model = Service
         fields = ['id', 'name', 'text', 'image', 'order']
 
-    def get_image(self, obj):
-        if obj.image:
-            request = self.context.get('request')
-            if request:
-                return request.build_absolute_uri(obj.image.url)
-            return obj.image.url
-        return None
 
-
-class EquipeSerializer(serializers.ModelSerializer):
-    image = serializers.SerializerMethodField()
+class EquipeSerializer(AbsoluteImageMixin, serializers.ModelSerializer):
+    image = serializers.ImageField(required=False, allow_null=True)
 
     class Meta:
         model = Equipe
         fields = ['id', 'name', 'role', 'text', 'image', 'order']
 
-    def get_image(self, obj):
-        if obj.image:
-            request = self.context.get('request')
-            if request:
-                return request.build_absolute_uri(obj.image.url)
-            return obj.image.url
-        return None
 
-
-class EquipementSerializer(serializers.ModelSerializer):
-    image = serializers.SerializerMethodField()
+class EquipementSerializer(AbsoluteImageMixin, serializers.ModelSerializer):
+    image = serializers.ImageField(required=False, allow_null=True)
 
     class Meta:
         model = Equipement
         fields = ['id', 'name', 'text', 'image', 'order']
 
-    def get_image(self, obj):
-        if obj.image:
-            request = self.context.get('request')
-            if request:
-                return request.build_absolute_uri(obj.image.url)
-            return obj.image.url
-        return None
 
-
-class SpaceSerializer(serializers.ModelSerializer):
-    image = serializers.SerializerMethodField()
+class SpaceSerializer(AbsoluteImageMixin, serializers.ModelSerializer):
+    image = serializers.ImageField(required=False, allow_null=True)
 
     class Meta:
         model = Space
         fields = ['id', 'name', 'text', 'image', 'order']
-
-    def get_image(self, obj):
-        if obj.image:
-            request = self.context.get('request')
-            if request:
-                return request.build_absolute_uri(obj.image.url)
-            return obj.image.url
-        return None
 
 
 class UtilisateurSerializer(serializers.ModelSerializer):

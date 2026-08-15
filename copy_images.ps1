@@ -3,14 +3,14 @@ $source = "H:\Projet\AReussi\lacolombe\public\Images"
 $dest = "H:\Projet\AReussi\backend_la_colombe\media"
 
 # Services
-Copy-Item "$source\1.jpeg" "$dest\services\medicine_interne.jpg"
+Copy-Item "$source\f" "$dest\services\medicine_interne.jpg"
 Copy-Item "$source\2.jpeg" "$dest\services\gynecologie.jpg"
 Copy-Item "$source\3.jpeg" "$dest\services\chirurgie.jpg"
 Copy-Item "$source\4.jpeg" "$dest\services\pediatrie.jpg"
 Copy-Item "$source\5.jpeg" "$dest\services\cardiologie.jpg"
 Copy-Item "$source\6.jpeg" "$dest\services\gastroenterologie.jpg"
 Copy-Item "$source\7.jpeg" "$dest\services\nephrologie.jpg"
-Copy-Item "$source\1.jpeg" "$dest\services\drepanocytose.jpg"
+Copy-Item "$source\f" "$dest\services\drepanocytose.jpg"
 Copy-Item "$source\2.jpeg" "$dest\services\cpn.jpg"
 Copy-Item "$source\3.jpeg" "$dest\services\cps.jpg"
 Copy-Item "$source\4.jpeg" "$dest\services\imagerie.jpg"
@@ -35,7 +35,6 @@ Copy-Item "$source\f.jpeg" "$dest\equipements\pharmacie.jpg"
 
 # Espaces
 Copy-Item "$source\g.jpeg" "$dest\spaces\chambres.jpg"
-Copy-Item "$source\h.jpeg" "$dest\spaces\toilettes.jpg"
-Copy-Item "$source\x.jpeg" "$dest\spaces\reception.jpg"
+Copy-Item "$source\3.jpeg" "$dest\spaces\3.jpegCopy-Item "$source\x.jpeg" "$dest\spaces\reception.jpg"
 
 Write-Host "Images copiées avec succès!"

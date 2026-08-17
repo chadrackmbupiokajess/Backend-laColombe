@@ -23,13 +23,21 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@8!#&se74r3%#exz+8!en!%(eb$^$vnmry8f9j#*(8y$%!w0(d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'lacolombe.pythonanywhere.com',
+    'www.lacolombe.pythonanywhere.com',
+]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://lacolombe.pythonanywhere.com",
+    "https://www.lacolombe.pythonanywhere.com",
+    "https://centremedicallacolombe.vercel.app",
 ]
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = True
@@ -37,6 +45,9 @@ CORS_ALLOW_ALL_ORIGINS = True
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://lacolombe.pythonanywhere.com",
+    "https://www.lacolombe.pythonanywhere.com",
+    "https://centremedicallacolombe.vercel.app",
 ]
 
 SESSION_COOKIE_SAMESITE = 'Lax'

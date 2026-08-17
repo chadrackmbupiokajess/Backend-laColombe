@@ -3,7 +3,7 @@ $source = "H:\Projet\AReussi\lacolombe\public\Images"
 $dest = "H:\Projet\AReussi\backend_la_colombe\media"
 
 # Services
-Copy-Item "$source\f" "$dest\services\medicine_interne.jpg"
+Copy-Item "$source\f.jpeg" "$dest\services\medicine_interne.jpg"
 Copy-Item "$source\2.jpeg" "$dest\services\gynecologie.jpg"
 Copy-Item "$source\3.jpeg" "$dest\services\chirurgie.jpg"
 Copy-Item "$source\4.jpeg" "$dest\services\pediatrie.jpg"

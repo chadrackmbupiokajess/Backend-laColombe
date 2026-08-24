@@ -14,8 +14,22 @@ class Service(models.Model):
         return self.name
 
 
+class EquipeCategory(models.Model):
+    name = models.CharField(max_length=120, unique=True)
+    order = models.IntegerField(default=0)
+
+    class Meta:
+        ordering = ['order', 'name']
+        verbose_name = "Catégorie d'équipe"
+        verbose_name_plural = "Catégories d'équipe"
+
+    def __str__(self):
+        return self.name
+
+
 class Equipe(models.Model):
     name = models.CharField(max_length=200)
+    category = models.ForeignKey(EquipeCategory, on_delete=models.SET_NULL, blank=True, null=True, related_name='members')
     role = models.CharField(max_length=200)
     text = models.TextField(blank=True)
     image = models.ImageField(upload_to='equipe/', blank=True, null=True)

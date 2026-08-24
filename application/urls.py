@@ -3,9 +3,11 @@ from rest_framework.routers import DefaultRouter
 from .views import (
     ServiceViewSet,
     EquipeViewSet,
+    EquipeCategoryViewSet,
     EquipementViewSet,
     SpaceViewSet,
     UtilisateurViewSet,
+    NotificationViewSet,
     csrf_token_view,
     login_view,
     logout_view,
@@ -17,9 +19,11 @@ from .views import (
 router = DefaultRouter()
 router.register(r'services', ServiceViewSet)
 router.register(r'equipe', EquipeViewSet)
+router.register(r'equipe-categories', EquipeCategoryViewSet)
 router.register(r'equipements', EquipementViewSet)
 router.register(r'spaces', SpaceViewSet)
 router.register(r'utilisateurs', UtilisateurViewSet)
+router.register(r'notifications-admin', NotificationViewSet)
 
 urlpatterns = [
     path('api/auth/csrf/', csrf_token_view, name='csrf-token'),

@@ -1,6 +1,6 @@
 from django.contrib.auth.hashers import make_password
 from rest_framework import serializers
-from .models import Service, Equipe, Equipement, Space, Utilisateur, Notification
+from .models import Service, Equipe, EquipeCategory, Equipement, Space, Utilisateur, Notification
 
 
 class AbsoluteImageMixin:
@@ -23,12 +23,32 @@ class ServiceSerializer(AbsoluteImageMixin, serializers.ModelSerializer):
         fields = ['id', 'name', 'text', 'image', 'order']
 
 
+class EquipeCategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = EquipeCategory
+        fields = ['id', 'name', 'order']
+
+
 class EquipeSerializer(AbsoluteImageMixin, serializers.ModelSerializer):
     image = serializers.ImageField(required=False, allow_null=True)
+    role = serializers.CharField(required=False, allow_blank=True)
+    category_name = serializers.CharField(source='category.name', read_only=True)
 
     class Meta:
         model = Equipe
-        fields = ['id', 'name', 'role', 'text', 'image', 'order']
+        fields = ['id', 'name', 'category', 'category_name', 'role', 'text', 'image', 'order']
+
+    def validate(self, attrs):
+        category = attrs.get('category')
+        if category and not attrs.get('role'):
+            attrs['role'] = category.name
+        return attrs
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        if instance.category:
+            data['role'] = instance.category.name
+        return data
 
 
 class EquipementSerializer(AbsoluteImageMixin, serializers.ModelSerializer):

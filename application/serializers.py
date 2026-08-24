@@ -1,6 +1,6 @@
 from django.contrib.auth.hashers import make_password
 from rest_framework import serializers
-from .models import Service, Equipe, Equipement, Space, Utilisateur
+from .models import Service, Equipe, Equipement, Space, Utilisateur, Notification
 
 
 class AbsoluteImageMixin:
@@ -64,3 +64,9 @@ class UtilisateurSerializer(serializers.ModelSerializer):
         if password:
             validated_data['password'] = make_password(password)
         return super().update(instance, validated_data)
+
+
+class NotificationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Notification
+        fields = ['id', 'title', 'message', 'notification_type', 'link', 'is_read', 'created_at']

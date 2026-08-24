@@ -67,3 +67,30 @@ class Utilisateur(models.Model):
 
     def __str__(self):
         return self.username
+
+
+class Notification(models.Model):
+    TYPE_INFO = 'info'
+    TYPE_SUCCESS = 'success'
+    TYPE_WARNING = 'warning'
+    TYPE_ALERT = 'alert'
+
+    NOTIFICATION_TYPES = [
+        (TYPE_INFO, 'Information'),
+        (TYPE_SUCCESS, 'Succès'),
+        (TYPE_WARNING, 'Avertissement'),
+        (TYPE_ALERT, 'Alerte'),
+    ]
+
+    title = models.CharField(max_length=200)
+    message = models.TextField()
+    notification_type = models.CharField(max_length=20, choices=NOTIFICATION_TYPES, default=TYPE_INFO)
+    link = models.CharField(max_length=255, blank=True, default='')
+    is_read = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return self.title
